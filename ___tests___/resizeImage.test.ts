@@ -17,7 +17,7 @@ describe('POST /resize/:imageName', () => {
             .set('Content-Type', 'application/json'); // Set the content type to application/json
 
 
-        expect(response.status).toBe(200);
+        expect(response.status).toBe(201);
 
       /*  // You may also want to check if the resized image exists at the expected location
         const resizedImagePath = path.join(__dirname, '../../images', `new-${imageName}`);

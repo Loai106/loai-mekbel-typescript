@@ -133,7 +133,7 @@ exports.GreyscaleImage = GreyscaleImage;
 //image watermark
 const WatermarkImage = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        const watermarkImagePath = path_1.default.join(__dirname, '../../images/watermark.png');
+        const watermarkImagePath = path_1.default.join(__dirname, '../../images', "watermark.png");
         const imageName = req.params.imageName;
         const imagePath = path_1.default.join(__dirname, '../../images', imageName);
         const waterMarkedImagePath = path_1.default.join(__dirname, '../../images', `watermark-${imageName}`);

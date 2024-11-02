@@ -154,7 +154,7 @@ export const GreyscaleImage =async(req:Request, res: Response , next: NextFuncti
  export const WatermarkImage = async (req:Request,res:Response, next: NextFunction)=>{
 
     try{
-        const watermarkImagePath : string= path.join(__dirname,'../../images/watermark.png');
+        const watermarkImagePath : string= path.join(__dirname,'../../images',"watermark.png");
         const imageName : string = req.params.imageName;
         const imagePath : string = path.join(__dirname,'../../images',imageName);
         const waterMarkedImagePath = path.join(__dirname,'../../images',`watermark-${imageName}`);
